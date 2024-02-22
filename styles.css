@@ -1,0 +1,108 @@
+.body {
+    top: 0px;
+    left: 0px;
+}
+
+.square {
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    text-align: right;
+}
+
+.testFlex {
+    display: flex;
+    flex-direction: row;
+}
+
+.square1 {
+    background-color: rgb(105, 21, 21);
+    z-index: 5;
+
+}
+
+.square2 {
+    background-color: powderblue;
+    z-index: 4;
+    left: 32px;
+}
+
+.square3 {
+    background-color: goldenrod;
+    z-index: 3;
+    left: 48px;
+}
+
+.square4 {
+    background-color: yellowgreen;
+    z-index: 2;
+    left: 64px;
+
+}
+
+.square5 {
+    background-color: blueviolet;
+    left: 80px;
+
+}
+
+.parent {
+    width: 300px;
+    height: 100px;
+    left: 500px;
+    border: 2px solid black;
+}
+
+.child {
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+    padding: 16px;
+    box-sizing: border-box;
+
+}
+
+.item {
+    border: 5px solid red;
+    width: 64px;
+    height: 64px;
+    top: calc(50vh - 64px);
+    left: calc(50vw - 16px);
+    align-items: center;
+    position: absolute;
+    text-align: center;
+
+}
+
+.father {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: calc(50vh - 64px);
+    left: calc(50vw - 16px);
+}
+
+.baby {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+}
+
+.element-centrat {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 16px;
+    /* Adaugă spațiu de 16px in jurul elementului */
+}
+
+.element-ascuns-cu-spatiu {
+    display: none;
+}
+
+.element-ascuns-fara-spatiu {
+    visibility: hidden;
+}
